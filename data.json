@@ -1,0 +1,28 @@
+[
+    {
+        "model":"app.bank",
+        "pk":1,
+        "fields":{
+            "ifsc":"ABHY00650002",
+            "bank_name":"Ali Baba Bank",
+            "bank_id":79,
+            "state":"U.P",
+            "district":"Gautum Buddha Nagar",
+            "city":"Noida",
+            "address":"Hulu Hulu"
+        }
+    },
+{
+        "model":"app.bank",
+        "pk":2,
+        "fields":{
+            "ifsc":"ABHY006500035",
+            "bank_name":"Ali Baba Bank",
+            "bank_id":799,
+            "state":"U.P",
+            "district":"Gautum Buddha Nagar",
+            "city":"Noida sec 2",
+            "address":"Hulu Hulu road"
+        }
+    }
+]
