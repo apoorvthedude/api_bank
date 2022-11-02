@@ -8,7 +8,7 @@ class banks(models.Model):
     bank_id = models.BigIntegerField(primary_key=True)
 
     class Meta:
-        verbose_name = "bank"
+        #verbose_name = "bank"
         db_table = 'banks'
 
         def __str__(self) -> str:
@@ -24,8 +24,8 @@ class Branches(models.Model):
     state = models.CharField(max_length=50, blank=True, null=True)
 
     class Meta:
-        verbose_name = "branch"
-        verbose_name_plural = "branches"
+        #verbose_name = "branch"
+        #verbose_name_plural = "branches"
         db_table = 'branches'
 
     def __str__(self) -> str:
@@ -42,8 +42,8 @@ class BankBranches(models.Model):
     bank_name = models.CharField(max_length=50, blank=True, null=True)
 
     class Meta:
-        verbose_name = "bank branch"
-        verbose_name_plural = "bank branches"
+        #verbose_name = "bank branch"
+        #verbose_name_plural = "bank branches"
         managed = False
         db_table = 'bank_branches'
 

@@ -3,11 +3,11 @@ import graphene
 
 from graphene_django import DjangoObjectType,DjangoListField
 
-from .models import bank
+from .models import banks
 
 class BankDetails(DjangoObjectType):
     class Meta:
-        model = bank
+        model = banks
         fields = "__all__"
 
 class Query(graphene.ObjectType):
