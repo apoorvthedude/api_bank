@@ -40,6 +40,7 @@ INSTALLED_APPS = [
  
     # Manually Added
     'app',
+    'api',
     'rest_framework',
     'graphene_django',
 ]
@@ -80,8 +81,13 @@ WSGI_APPLICATION = 'main.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        #'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'bank',
+        'USER':'macos',
+        'PASSWORD':'admin112233',
+        'HOST':'localhost',
+        'PORT':'5432',
     }
 }
 
